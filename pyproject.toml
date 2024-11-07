@@ -1,0 +1,22 @@
+[project]
+name = "vidmarmercado"
+version = "0.1.0"
+description = "vidmarmercado using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+streamlit = "^1.39.0"
+crewai = {extras = ["tools"], version = "^0.74.2"}
+pysqlite3-binary = "^0.5.3.post1"
+
+[project.scripts]
+vidmarmercado = "vidmarmercado.main:run"
+run_crew = "vidmarmercado.main:run"
+train = "vidmarmercado.main:train"
+replay = "vidmarmercado.main:replay"
+test = "vidmarmercado.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
