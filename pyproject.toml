@@ -1,4 +1,4 @@
-[project]
+[tool.poetry]
 name = "vidmarmercado"
 version = "0.1.0"
 description = "vidmarmercado using crewAI"
@@ -11,7 +11,7 @@ streamlit = "^1.39.0"
 crewai = {extras = ["tools"], version = "^0.74.2"}
 pysqlite3-binary = "^0.5.3.post1"
 
-[project.scripts]
+[tool.project.scripts]
 vidmarmercado = "vidmarmercado.main:run"
 run_crew = "vidmarmercado.main:run"
 train = "vidmarmercado.main:train"
